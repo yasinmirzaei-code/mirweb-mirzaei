@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>MirWeb — Yasin Mirzaei, Creative Developer</title>
 <meta name="description" content="MirWeb — portfolio of Yasin Mirzaei, a creative developer building immersive, fast and unforgettable websites.">
-<meta name="theme-color" content="#06061a">
+<meta name="theme-color" content="#0c0d10">
 <meta property="og:title" content="MirWeb — Yasin Mirzaei, Creative Developer">
 <meta property="og:description" content="Immersive, fast and unforgettable websites for brands and people who want to stand out.">
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,31 +30,37 @@
   <div class="meta"><span>Yasin Mirzaei · MirWeb</span><span>Interfaces, motion &amp; WebGL</span><span class="sc">Scroll</span></div>
 </section>
 
-<div class="marq"><div>Design Engineering<i>✦</i>Motion<i>✦</i>WebGL<i>✦</i>Interaction<i>✦</i>Design Engineering<i>✦</i>Motion<i>✦</i>WebGL<i>✦</i>Interaction<i>✦</i></div></div>
+<section class="alive" id="alive">
+  <p class="label">Signature · Interactive</p>
+  <div class="stage" tabindex="0" role="img" aria-label="Interactive particle typography that spells ALIVE, MOTION, DETAIL and MIRWEB. Press Enter to change the word.">
+    <canvas id="alive-cv"></canvas>
+  </div>
+  <div class="hint"><span>Digital things that feel alive — move or touch the type, tap to change the word.</span><span><b id="al-count">01</b> / 04</span></div>
+</section>
 
 <section class="work" id="work">
   <p class="label">Selected work (04)</p>
-  <a href="#" data-c="#ff5b2e,#7a1d00"><h3>Nocturne</h3><small>Brand site · 2026</small></a>
-  <a href="#" data-c="#4b6bff,#0a1a6b"><h3>Halo Audio</h3><small>3D product · 2025</small></a>
-  <a href="#" data-c="#2ecf9a,#06402e"><h3>Fieldnotes</h3><small>Editorial · 2025</small></a>
-  <a href="#" data-c="#f2c94c,#6b4e00"><h3>Orbit Labs</h3><small>Web app · 2024</small></a>
+  <a href="#p-nocturne" data-id="nocturne"><h3>Nocturne</h3><small>Brand site · 2026</small></a>
+  <a href="#p-halo-audio" data-id="halo-audio"><h3>Halo Audio</h3><small>3D product · 2025</small></a>
+  <a href="#p-fieldnotes" data-id="fieldnotes"><h3>Fieldnotes</h3><small>Editorial · 2025</small></a>
+  <a href="#p-orbit-labs" data-id="orbit-labs"><h3>Orbit Labs</h3><small>Web app · 2024</small></a>
 </section>
 
 <section id="samples">
   <p class="label">Case studies</p>
   <div class="track" id="track">
-    <div class="card"><div class="art" style="--a:#ff5b2e;--b:#7a1d00"></div><h4>Nocturne</h4><p>Brand website · 2026</p></div>
-    <div class="card"><div class="art" style="--a:#4b6bff;--b:#0a1a6b"></div><h4>Halo Audio</h4><p>3D product page · 2025</p></div>
-    <div class="card"><div class="art" style="--a:#2ecf9a;--b:#06402e"></div><h4>Fieldnotes</h4><p>Editorial platform · 2025</p></div>
-    <div class="card"><div class="art" style="--a:#f2c94c;--b:#6b4e00"></div><h4>Orbit Labs</h4><p>Web app · 2024</p></div>
-    <div class="card"><div class="art" style="--a:#e056fd;--b:#4a0d5c"></div><h4>Pulse</h4><p>Mobile landing · 2024</p></div>
-    <div class="card"><div class="art" style="--a:#00c2ff;--b:#003a52"></div><h4>Atlas</h4><p>Data dashboard · 2023</p></div>
+    <div class="card" data-id="nocturne" role="button" tabindex="0"><div class="art"></div><h4>Nocturne</h4><p>Brand website · 2026</p></div>
+    <div class="card" data-id="halo-audio" role="button" tabindex="0"><div class="art"></div><h4>Halo Audio</h4><p>3D product page · 2025</p></div>
+    <div class="card" data-id="fieldnotes" role="button" tabindex="0"><div class="art"></div><h4>Fieldnotes</h4><p>Editorial platform · 2025</p></div>
+    <div class="card" data-id="orbit-labs" role="button" tabindex="0"><div class="art"></div><h4>Orbit Labs</h4><p>Web app · 2024</p></div>
+    <div class="card" data-id="pulse" role="button" tabindex="0"><div class="art"></div><h4>Pulse</h4><p>Mobile landing · 2024</p></div>
+    <div class="card" data-id="atlas" role="button" tabindex="0"><div class="art"></div><h4>Atlas</h4><p>Data dashboard · 2023</p></div>
   </div>
   <div class="bar"><i></i></div>
 </section>
 
 <section class="about" id="about">
-  <h2 data-split>I build digital things that feel alive.</h2>
+  <h2 data-split data-em="alive">I build digital things that feel alive.</h2>
   <div data-reveal>
     <p>Eight years crafting websites where every scroll, hover and transition is deliberate. I work with studios and founders who care about the details people feel but can’t always name.</p>
     <ul><li>GSAP</li><li>Three.js</li><li>GLSL</li><li>Next.js</li><li>Figma</li></ul>
@@ -63,7 +69,7 @@
 
 <section class="faq" id="faq">
   <p class="label">FAQ</p>
-  <h2 data-split>Questions, answered.</h2>
+  <h2 data-split data-em="answered">Questions, answered.</h2>
   <details><summary>What services do you offer?</summary><p>Website design and development, motion and interaction design, WebGL experiences and design systems.</p></details>
   <details><summary>How long does a project take?</summary><p>A portfolio or landing page usually takes 2–4 weeks. Larger sites with custom 3D or complex interactions take 6–10 weeks.</p></details>
   <details><summary>How much does a project cost?</summary><p>Every project is scoped individually. Send me a message with your goals and timeline and I’ll reply with a clear quote.</p></details>
@@ -97,9 +103,29 @@
   </div>
 </div>
 
+<div class="case" id="case" role="dialog" aria-modal="true" aria-labelledby="case-title" data-lenis-prevent hidden>
+  <div class="case-top"><span class="logo">MirWeb</span><button class="case-x" id="case-x" type="button">Close <b aria-hidden="true">✕</b></button></div>
+  <header class="case-head">
+    <p class="label" id="case-kind" data-in></p>
+    <h2 id="case-title" data-in></h2>
+  </header>
+  <div class="case-art" id="case-art" data-in></div>
+  <div class="case-body">
+    <p class="case-desc" id="case-desc" data-in></p>
+    <dl class="case-meta" data-in>
+      <div><dt>Year</dt><dd id="case-year"></dd></div>
+      <div><dt>Role</dt><dd id="case-role"></dd></div>
+      <div><dt>Stack</dt><dd id="case-stack"></dd></div>
+    </dl>
+  </div>
+  <button class="case-next" id="case-next" type="button" data-in><small>Next project</small><span id="case-next-t"></span></button>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script src="main.js"></script>
+<script src="alive.js"></script>
+<script src="work.js"></script>
 </body>
 </html>
